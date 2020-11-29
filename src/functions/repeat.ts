@@ -1,7 +1,10 @@
 import { concat } from "./concat";
 
 /**
- * Repeat buffer
+ * Repeat the given buffer the given amount of times
+ *
+ * @param buffer
+ * @param times
  */
 export function repeat(buffer: AudioBuffer, times: number) {
   if (times <= 0)
@@ -13,10 +16,7 @@ export function repeat(buffer: AudioBuffer, times: number) {
 
   if (times === 1) return buffer;
 
-  const buffers = [];
-  for (let i = 0; i < times; i++) {
-    buffers.push(buffer);
-  }
+  const buffers = Array(times).fill(times);
 
   return concat(buffers);
 }

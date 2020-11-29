@@ -1,7 +1,8 @@
 coverage/
-lib/test/
+dist/test/
 src/
 debug.log
 karma.conf.js
 tsconfig.json
 *.tgz
+yarn.lock

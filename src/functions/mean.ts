@@ -2,6 +2,9 @@ import { nidx } from "./nidx";
 
 /**
  * Get average level per-channel
+ * @param buffer
+ * @param start
+ * @param end
  */
 export function mean(
   buffer: AudioBuffer,

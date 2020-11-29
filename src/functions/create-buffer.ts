@@ -1,14 +1,12 @@
-import {
-  AudioBufferUtils,
-  TFullAudioCreateOptions,
-} from "../audio-buffer-utils";
+import { audioContext, TFullAudioCreateOptions } from "..";
 
-export function createBufferFromOptions(
-  options: TFullAudioCreateOptions | number | string
-) {
-  return createBuffer(options);
-}
-
+/**
+ * Create a new AudioBuffer instance with the given options,
+ * when the optional AudioBuffer parameter is given this instance
+ * will be used to extract the options from.
+ * @param options
+ * @param source
+ */
 export function createBuffer(
   options: TFullAudioCreateOptions | number | string,
   source?: AudioBuffer
@@ -22,9 +20,9 @@ export function createBuffer(
 
   //src, channels
   if (typeof options === "number") {
-    fullOptions = { channels: options, context: AudioBufferUtils.context };
+    fullOptions = { channels: options, context: audioContext };
   } else if (typeof options === "string") {
-    fullOptions = { format: options, context: AudioBufferUtils.context };
+    fullOptions = { format: options, context: audioContext };
   } else {
     fullOptions = options;
   }
@@ -57,7 +55,7 @@ export function createBuffer(
   }
 
   //create buffer of proper length
-  var audioBuffer = new AudioBuffer({
+  const audioBuffer = new AudioBuffer({
     length: length == null ? 1 : length,
     numberOfChannels: channels || 1,
     sampleRate: sampleRate || 44100,

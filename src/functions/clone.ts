@@ -2,7 +2,8 @@ import { copy } from "./copy";
 import { shallow } from "./shallow";
 
 /**
- * Create clone of a buffer
+ * Creates a clone of the given buffer
+ * @param buffer
  */
 export function clone(buffer: AudioBuffer) {
   return copy(buffer, shallow(buffer));

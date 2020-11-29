@@ -7,7 +7,7 @@
 /coverage
 
 # build
-/lib
+/dist
 
 # miscelaneous
 npm-debug.log*

@@ -2,6 +2,10 @@ import { nidx } from "./nidx";
 
 /**
  * Return a section of the given buffer
+ *
+ * @param buffer
+ * @param start
+ * @param end
  */
 export function slice(
   buffer: AudioBuffer,

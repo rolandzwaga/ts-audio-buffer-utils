@@ -3,6 +3,11 @@ import { mean } from "./mean";
 
 /**
  * remove DC offset
+ *
+ * @param buffer
+ * @param target
+ * @param start
+ * @param end
  */
 export function removeStatic(
   buffer: AudioBuffer,

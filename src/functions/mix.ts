@@ -8,10 +8,15 @@ export type TRatioValue =
     ) => number);
 
 /**
- * Mix current buffer with the other one.
+ * Mix current bufferA with bufferB.
  * The reason to modify bufferA instead of returning the new buffer
  * is reduced amount of calculations and flexibility.
- * If required, the cloning can be done before mixing, which will be the same.
+ * If required, the cloning can be done before mixing.
+ *
+ * @param bufferA
+ * @param bufferB
+ * @param ratio
+ * @param offset
  */
 export function mix(
   bufferA: AudioBuffer,

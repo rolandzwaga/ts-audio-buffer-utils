@@ -1,5 +1,8 @@
 /**
  * Shift content of the buffer
+ *
+ * @param buffer
+ * @param offset
  */
 export function shift(buffer: AudioBuffer, offset: number) {
   for (let channel = 0; channel < buffer.numberOfChannels; channel++) {

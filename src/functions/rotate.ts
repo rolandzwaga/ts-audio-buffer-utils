@@ -1,5 +1,8 @@
 /**
- * Shift content of the buffer in circular fashion
+ * Shift content of the given buffer in circular fashion
+ *
+ * @param buffer
+ * @param offset
  */
 export function rotate(buffer: AudioBuffer, offset: number) {
   for (let channel = 0; channel < buffer.numberOfChannels; channel++) {

@@ -1,8 +1,9 @@
 /**
- * Concat buffer with other buffer(s)
+ * Concat the given list of buffers
+ * @param buffers
  */
-export function concat(...args: (AudioBuffer | AudioBuffer[])[]) {
-  const bufferList: AudioBuffer[] = args.flat();
+export function concat(...buffers: (AudioBuffer | AudioBuffer[])[]) {
+  const bufferList: AudioBuffer[] = buffers.flat();
 
   const { channels, length, sampleRate } = bufferList.reduce(
     (bufferInfo, buffer) => {

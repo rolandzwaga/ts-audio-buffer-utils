@@ -1,23 +1,16 @@
-import {
-  AudioBufferUtils,
-  TAudioCreateArgs,
-  TFullAudioCreateOptions,
-} from "../audio-buffer-utils";
+import { audioContext, TAudioCreateArgs, TFullAudioCreateOptions } from "..";
 import { createBuffer } from "./create-buffer";
 
 /**
- * Create buffer from any argument.
- * Better constructor than audio-buffer.
+ * Create AudioBuffer options or source buffer.
  */
 export function create(
-  options?: TAudioCreateArgs,
-  src?: AudioBuffer,
-  sampleRate?: number
+  options: TAudioCreateArgs = {},
+  sampleRate?: number,
+  source?: AudioBuffer
 ) {
   if (typeof options === "number") {
     options = { channels: options };
-  } else if (!options) {
-    options = {};
   }
 
   if (sampleRate) {
@@ -26,8 +19,8 @@ export function create(
 
   const fullOptions: TFullAudioCreateOptions = {
     ...options,
-    context: AudioBufferUtils.context,
+    context: audioContext,
   };
 
-  return createBuffer(fullOptions, src);
+  return createBuffer(fullOptions, source);
 }

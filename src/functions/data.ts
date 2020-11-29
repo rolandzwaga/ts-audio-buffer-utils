@@ -1,5 +1,7 @@
 /**
- * Return array with buffer’s per-channel data
+ * Return array with the given buffer’s per-channel data
+ * @param buffer the given buffer
+ * @param data
  */
 export function data(buffer: AudioBuffer, data: Float32Array[] = []) {
   //transfer data per-channel

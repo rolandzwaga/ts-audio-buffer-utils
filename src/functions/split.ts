@@ -1,11 +1,13 @@
 import { slice } from "./slice";
 
 /**
- * Split the source buffer into two separate buffers, cutting it in two
- * at the given offset.
+ * Split the given buffer into two separate buffers, cutting it in two at the given offset.
+ *
+ * @param buffer
+ * @param offset
  */
-export function split(source: AudioBuffer, offset: number) {
-  const left = slice(source, 0, offset);
-  const right = slice(source, offset);
+export function split(buffer: AudioBuffer, offset: number) {
+  const left = slice(buffer, 0, offset);
+  const right = slice(buffer, offset);
   return [left, right];
 }

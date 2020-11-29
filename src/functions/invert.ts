@@ -2,6 +2,10 @@ import { fill } from "./fill";
 
 /**
  * Invert amplitude of samples in each channel
+ * @param buffer
+ * @param target
+ * @param start
+ * @param end
  */
 export function invert(
   buffer: AudioBuffer,

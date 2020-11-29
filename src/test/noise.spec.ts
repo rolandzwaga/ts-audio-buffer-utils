@@ -1,4 +1,4 @@
-import { AudioBufferUtils } from "~/audio-buffer-utils";
+import { noise } from "~/functions/noise";
 import { compareChannels } from "./helper/compareChannels";
 
 describe("audiobuffer utils - noise", () => {
@@ -8,7 +8,7 @@ describe("audiobuffer utils - noise", () => {
       sampleRate: 44100,
       numberOfChannels: 2,
     });
-    AudioBufferUtils.noise(buffer);
+    noise(buffer);
 
     const result = compareChannels(
       buffer,

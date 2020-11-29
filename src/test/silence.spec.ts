@@ -1,14 +1,14 @@
-import { AudioBufferUtils } from "~/audio-buffer-utils";
+import { silence } from "~/functions/silence";
 import { compareChannels } from "./helper/compareChannels";
 
-describe("audiobuffer utils - zero", () => {
-  it("should create a zero filled buffer", () => {
+describe("audiobuffer utils - silence", () => {
+  it("should create a silence filled buffer", () => {
     const buffer = new AudioBuffer({
       length: 1000,
       sampleRate: 44100,
       numberOfChannels: 2,
     });
-    AudioBufferUtils.zero(buffer);
+    silence(buffer);
 
     const result = compareChannels(buffer, 0);
 

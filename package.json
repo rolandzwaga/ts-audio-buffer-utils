@@ -2,8 +2,8 @@
   "name": "ts-audio-buffer-utils",
   "version": "1.0.0",
   "description": "Typescript utility functions for AudioBuffers",
-  "main": "lib/audio-buffer-utils.js",
-  "author": "Roland Zwaga",
+  "main": "dist/index.js",
+  "author": "Roland Zwaga <rbzwaga@gmail.com>",
   "license": "MIT",
   "keywords": [
     "web",

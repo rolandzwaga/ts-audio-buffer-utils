@@ -3,17 +3,23 @@ import { create } from "./create";
 import { fill } from "./fill";
 
 export type TPaddingSide = "left" | "right";
+
 /**
- * Pad buffer to required size
+ * Pad the given buffer to the required size
+ *
+ * @param buffer
+ * @param newLength
+ * @param side
+ * @param value
  */
 export function pad(
   buffer: AudioBuffer,
-  length: number,
+  newLength: number,
   side: TPaddingSide,
   value: number = 0
 ) {
   //no need to pad
-  if (length < buffer.length) return buffer;
+  if (newLength < buffer.length) return buffer;
 
   //left-pad
   if (side === "left") {
@@ -21,7 +27,7 @@ export function pad(
       fill(
         create({
           channels: buffer.numberOfChannels,
-          length: length - buffer.length,
+          length: newLength - buffer.length,
         }),
         undefined,
         value
@@ -36,7 +42,7 @@ export function pad(
     fill(
       create({
         channels: buffer.numberOfChannels,
-        length: length - buffer.length,
+        length: newLength - buffer.length,
       }),
       undefined,
       value
@@ -44,10 +50,32 @@ export function pad(
   );
 }
 
-export function padLeft(buffer: AudioBuffer, len: number, value: number = 0) {
-  return pad(buffer, len, "left", value);
+/**
+ * Pad the given buffer to the required size from the left.
+ *
+ * @param buffer
+ * @param newLength
+ * @param value
+ */
+export function padLeft(
+  buffer: AudioBuffer,
+  newLength: number,
+  value: number = 0
+) {
+  return pad(buffer, newLength, "left", value);
 }
 
-export function padRight(buffer: AudioBuffer, len: number, value: number = 0) {
-  return pad(buffer, len, "right", value);
+/**
+ * Pad the given buffer to the required size from the right.
+ *
+ * @param buffer
+ * @param newLength
+ * @param value
+ */
+export function padRight(
+  buffer: AudioBuffer,
+  newLength: number,
+  value: number = 0
+) {
+  return pad(buffer, newLength, "right", value);
 }

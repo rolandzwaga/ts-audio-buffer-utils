@@ -1,23 +1,14 @@
 import { fill } from "./fill";
 import { nidx } from "./nidx";
 
-function clamp(value: number, min: number, max: number) {
-  return min < max
-    ? value < min
-      ? min
-      : value > max
-      ? max
-      : value
-    : value < max
-    ? max
-    : value > min
-    ? min
-    : value;
-}
-
 /**
- * Normalize buffer by the maximum value,
+ * Normalize the given buffer by the maximum value,
  * limit values by the -1..1 range
+ *
+ * @param buffer
+ * @param target
+ * @param start
+ * @param end
  */
 export function normalize(
   buffer: AudioBuffer,
@@ -49,4 +40,18 @@ export function normalize(
     start,
     end
   );
+}
+
+function clamp(value: number, min: number, max: number) {
+  return min < max
+    ? value < min
+      ? min
+      : value > max
+      ? max
+      : value
+    : value < max
+    ? max
+    : value > min
+    ? min
+    : value;
 }

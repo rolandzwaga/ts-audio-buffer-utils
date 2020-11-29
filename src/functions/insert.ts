@@ -7,6 +7,10 @@ import { split } from "./split";
  * The optional length parameter determines the range in the target buffer
  * that will be overwritten by the source buffer.
  *
+ * @param sourceBuffer
+ * @param targetBuffer
+ * @param offset
+ * @param length
  */
 export function insert(
   sourceBuffer: AudioBuffer,

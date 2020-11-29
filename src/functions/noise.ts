@@ -1,7 +1,12 @@
 import { fill } from "./fill";
 
 /**
- * Fill with white noise
+ * Fill the given buffer with white noise
+ *
+ * @param buffer
+ * @param target
+ * @param start
+ * @param end
  */
 export function noise(
   buffer: AudioBuffer,

@@ -1,9 +1,14 @@
 import { fill } from "./fill";
 
 /**
- * Fill with zeros
+ * Fill the given buffer with zeros
+ *
+ * @param buffer
+ * @param target
+ * @param start
+ * @param end
  */
-export function zero(
+export function silence(
   buffer: AudioBuffer,
   target: AudioBuffer = buffer,
   start: number = 0,

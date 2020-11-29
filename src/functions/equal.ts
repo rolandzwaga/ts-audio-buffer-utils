@@ -1,5 +1,7 @@
 /**
  * Test whether two buffers are the same
+ * @param bufferA
+ * @param bufferB
  */
 export function equal(bufferA: AudioBuffer, bufferB: AudioBuffer) {
   if (
