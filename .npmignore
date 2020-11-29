@@ -1,0 +1,7 @@
+coverage/
+lib/test/
+src/
+debug.log
+karma.conf.js
+tsconfig.json
+*.tgz
