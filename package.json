@@ -15,17 +15,22 @@
   ],
   "scripts": {
     "build": "tsc -b",
-    "test": "karma start"
+    "test": "karma start",
+    "d": "ts-node --project tools/tsconfig.json tools/generate-readme",
+    "docs": "typedoc --json docs.json  --exclude \"src/+(test|helper)/**/*.*\" && ts-node tools/generate-readme && typedoc --exclude \"src/+(test|helper)/**/*.*\""
   },
   "devDependencies": {
     "@types/jasmine": "3.6.2",
+    "@types/node": "14.14.12",
     "jasmine-core": "3.6.0",
     "karma": "5.2.3",
-    "karma-chrome-launcher": "^3.1.0",
+    "karma-chrome-launcher": "3.1.0",
     "karma-cli": "2.0.0",
     "karma-jasmine": "4.0.1",
     "karma-spec-reporter": "0.0.32",
     "karma-typescript": "5.2.0",
-    "typescript": "^4.1.2"
-  }
+    "ts-node": "9.1.1",
+    "typescript": "4.1.3"
+  },
+  "dependencies": {}
 }

@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "es2017",
+    "lib": ["esnext"],
+    "allowJs": false,
+    "skipLibCheck": false,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": false,
+    "esModuleInterop": true,
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "typeRoots": ["../node_modules/@types"],
+    "resolveJsonModule": true
+  },
+  "exclude": ["node_modules"],
+  "include": ["**/*.ts"]
+}

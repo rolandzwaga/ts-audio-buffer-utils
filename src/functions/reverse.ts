@@ -1,5 +1,5 @@
+import { nidx } from "../helper/nidx";
 import { copy } from "./copy";
-import { nidx } from "./nidx";
 
 /**
  * Reverse samples in each channel

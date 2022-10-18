@@ -1,4 +1,4 @@
-import { nidx } from "./nidx";
+import { nidx } from "../helper/nidx";
 
 /**
  * Get average level per-channel

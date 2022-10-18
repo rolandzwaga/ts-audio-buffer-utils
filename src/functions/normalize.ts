@@ -1,5 +1,5 @@
+import { nidx } from "../helper/nidx";
 import { fill } from "./fill";
-import { nidx } from "./nidx";
 
 /**
  * Normalize the given buffer by the maximum value,

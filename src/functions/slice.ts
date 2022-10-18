@@ -1,4 +1,4 @@
-import { nidx } from "./nidx";
+import { nidx } from "../helper/nidx";
 
 /**
  * Return a section of the given buffer

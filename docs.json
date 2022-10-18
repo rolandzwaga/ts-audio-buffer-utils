@@ -1,0 +1,4610 @@
+{
+	"id": 0,
+	"name": "ts-audio-buffer-utils",
+	"kind": 0,
+	"flags": {},
+	"originalName": "",
+	"children": [
+		{
+			"id": 11,
+			"name": "\"src/functions/clone\"",
+			"kind": 1,
+			"kindString": "Module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "C:/projects/ts-audio-buffer-utils/src/functions/clone.ts",
+			"children": [
+				{
+					"id": 12,
+					"name": "clone",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 13,
+							"name": "clone",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Creates a clone of the given buffer"
+							},
+							"parameters": [
+								{
+									"id": 14,
+									"name": "buffer",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"text": "\n"
+									},
+									"type": {
+										"type": "reference",
+										"name": "AudioBuffer"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "AudioBuffer"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/functions/clone.ts",
+							"line": 8,
+							"character": 21
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Functions",
+					"kind": 64,
+					"children": [
+						12
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/functions/clone.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 15,
+			"name": "\"src/functions/concat\"",
+			"kind": 1,
+			"kindString": "Module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "C:/projects/ts-audio-buffer-utils/src/functions/concat.ts",
+			"children": [
+				{
+					"id": 16,
+					"name": "concat",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 17,
+							"name": "concat",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Concat the given list of buffers"
+							},
+							"parameters": [
+								{
+									"id": 18,
+									"name": "buffers",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true,
+										"isRest": true
+									},
+									"comment": {
+										"text": "\n"
+									},
+									"type": {
+										"type": "array",
+										"elementType": {
+											"type": "union",
+											"types": [
+												{
+													"type": "reference",
+													"name": "AudioBuffer"
+												},
+												{
+													"type": "array",
+													"elementType": {
+														"type": "reference",
+														"name": "AudioBuffer"
+													}
+												}
+											]
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "AudioBuffer"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/functions/concat.ts",
+							"line": 5,
+							"character": 22
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Functions",
+					"kind": 64,
+					"children": [
+						16
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/functions/concat.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 1,
+			"name": "\"src/functions/copy\"",
+			"kind": 1,
+			"kindString": "Module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "C:/projects/ts-audio-buffer-utils/src/functions/copy.ts",
+			"children": [
+				{
+					"id": 2,
+					"name": "copy",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 3,
+							"name": "copy",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Copy data from buffer A to buffer B"
+							},
+							"parameters": [
+								{
+									"id": 4,
+									"name": "from",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"text": "Buffer A"
+									},
+									"type": {
+										"type": "reference",
+										"name": "AudioBuffer"
+									}
+								},
+								{
+									"id": 5,
+									"name": "to",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"text": "Buffer B"
+									},
+									"type": {
+										"type": "reference",
+										"name": "AudioBuffer"
+									}
+								},
+								{
+									"id": 6,
+									"name": "offset",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"text": "an optional offset that determines where buffer A is copied into buffer B\n"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									},
+									"defaultValue": "0"
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "AudioBuffer"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/functions/copy.ts",
+							"line": 7,
+							"character": 20
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Functions",
+					"kind": 64,
+					"children": [
+						2
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/functions/copy.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 24,
+			"name": "\"src/functions/create\"",
+			"kind": 1,
+			"kindString": "Module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "C:/projects/ts-audio-buffer-utils/src/functions/create.ts",
+			"children": [
+				{
+					"id": 25,
+					"name": "create",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 26,
+							"name": "create",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Create AudioBuffer options or source buffer."
+							},
+							"parameters": [
+								{
+									"id": 27,
+									"name": "options",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "reference",
+										"id": 230,
+										"name": "TAudioCreateArgs"
+									},
+									"defaultValue": "{}"
+								},
+								{
+									"id": 28,
+									"name": "sampleRate",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true,
+										"isOptional": true
+									},
+									"type": {
+										"type": "union",
+										"types": [
+											{
+												"type": "intrinsic",
+												"name": "undefined"
+											},
+											{
+												"type": "intrinsic",
+												"name": "number"
+											}
+										]
+									}
+								},
+								{
+									"id": 29,
+									"name": "source",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true,
+										"isOptional": true
+									},
+									"type": {
+										"type": "reference",
+										"name": "AudioBuffer"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "AudioBuffer"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/functions/create.ts",
+							"line": 7,
+							"character": 22
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Functions",
+					"kind": 64,
+					"children": [
+						25
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/functions/create.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 19,
+			"name": "\"src/functions/create-buffer\"",
+			"kind": 1,
+			"kindString": "Module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "C:/projects/ts-audio-buffer-utils/src/functions/create-buffer.ts",
+			"children": [
+				{
+					"id": 20,
+					"name": "createBuffer",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 21,
+							"name": "createBuffer",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Create a new AudioBuffer instance with the given options,\nwhen the optional AudioBuffer parameter is given this instance\nwill be used to extract the options from."
+							},
+							"parameters": [
+								{
+									"id": 22,
+									"name": "options",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {},
+									"type": {
+										"type": "union",
+										"types": [
+											{
+												"type": "reference",
+												"id": 238,
+												"name": "TFullAudioCreateOptions"
+											},
+											{
+												"type": "intrinsic",
+												"name": "number"
+											},
+											{
+												"type": "intrinsic",
+												"name": "string"
+											}
+										]
+									}
+								},
+								{
+									"id": 23,
+									"name": "source",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true,
+										"isOptional": true
+									},
+									"comment": {
+										"text": "\n"
+									},
+									"type": {
+										"type": "reference",
+										"name": "AudioBuffer"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "AudioBuffer"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/functions/create-buffer.ts",
+							"line": 10,
+							"character": 28
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Functions",
+					"kind": 64,
+					"children": [
+						20
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/functions/create-buffer.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 30,
+			"name": "\"src/functions/data\"",
+			"kind": 1,
+			"kindString": "Module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "C:/projects/ts-audio-buffer-utils/src/functions/data.ts",
+			"children": [
+				{
+					"id": 31,
+					"name": "data",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 32,
+							"name": "data",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Return array with the given buffer’s per-channel data"
+							},
+							"parameters": [
+								{
+									"id": 33,
+									"name": "buffer",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"text": "the given buffer"
+									},
+									"type": {
+										"type": "reference",
+										"name": "AudioBuffer"
+									}
+								},
+								{
+									"id": 34,
+									"name": "data",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"text": "\n"
+									},
+									"type": {
+										"type": "array",
+										"elementType": {
+											"type": "reference",
+											"name": "Float32Array"
+										}
+									},
+									"defaultValue": "[]"
+								}
+							],
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"name": "Float32Array"
+								}
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/functions/data.ts",
+							"line": 6,
+							"character": 20
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Functions",
+					"kind": 64,
+					"children": [
+						31
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/functions/data.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 35,
+			"name": "\"src/functions/equal\"",
+			"kind": 1,
+			"kindString": "Module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "C:/projects/ts-audio-buffer-utils/src/functions/equal.ts",
+			"children": [
+				{
+					"id": 36,
+					"name": "equal",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 37,
+							"name": "equal",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Test whether two buffers are the same"
+							},
+							"parameters": [
+								{
+									"id": 38,
+									"name": "bufferA",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {},
+									"type": {
+										"type": "reference",
+										"name": "AudioBuffer"
+									}
+								},
+								{
+									"id": 39,
+									"name": "bufferB",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"text": "\n"
+									},
+									"type": {
+										"type": "reference",
+										"name": "AudioBuffer"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "boolean"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/functions/equal.ts",
+							"line": 6,
+							"character": 21
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Functions",
+					"kind": 64,
+					"children": [
+						36
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/functions/equal.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 40,
+			"name": "\"src/functions/fill\"",
+			"kind": 1,
+			"kindString": "Module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "C:/projects/ts-audio-buffer-utils/src/functions/fill.ts",
+			"children": [
+				{
+					"id": 41,
+					"name": "TFillValue",
+					"kind": 4194304,
+					"kindString": "Type alias",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/functions/fill.ts",
+							"line": 3,
+							"character": 22
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "number"
+							},
+							{
+								"type": "reflection",
+								"declaration": {
+									"id": 42,
+									"name": "__type",
+									"kind": 65536,
+									"kindString": "Type literal",
+									"flags": {
+										"isExported": true
+									},
+									"signatures": [
+										{
+											"id": 43,
+											"name": "__call",
+											"kind": 4096,
+											"kindString": "Call signature",
+											"flags": {
+												"isExported": true
+											},
+											"parameters": [
+												{
+													"id": 44,
+													"name": "currentValue",
+													"kind": 32768,
+													"kindString": "Parameter",
+													"flags": {
+														"isExported": true
+													},
+													"type": {
+														"type": "intrinsic",
+														"name": "number"
+													}
+												},
+												{
+													"id": 45,
+													"name": "currentPosition",
+													"kind": 32768,
+													"kindString": "Parameter",
+													"flags": {
+														"isExported": true
+													},
+													"type": {
+														"type": "intrinsic",
+														"name": "number"
+													}
+												},
+												{
+													"id": 46,
+													"name": "channel",
+													"kind": 32768,
+													"kindString": "Parameter",
+													"flags": {
+														"isExported": true
+													},
+													"type": {
+														"type": "intrinsic",
+														"name": "number"
+													}
+												},
+												{
+													"id": 47,
+													"name": "data",
+													"kind": 32768,
+													"kindString": "Parameter",
+													"flags": {
+														"isExported": true
+													},
+													"type": {
+														"type": "reference",
+														"name": "Float32Array"
+													}
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"sources": [
+										{
+											"fileName": "src/functions/fill.ts",
+											"line": 5,
+											"character": 5
+										}
+									]
+								}
+							}
+						]
+					}
+				},
+				{
+					"id": 48,
+					"name": "fill",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 49,
+							"name": "fill",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Fill the given buffer with the given value. Default it fills the entire buffer unless\nthe start and end positions are also passed in."
+							},
+							"parameters": [
+								{
+									"id": 50,
+									"name": "buffer",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"text": "The given buffer"
+									},
+									"type": {
+										"type": "reference",
+										"name": "AudioBuffer"
+									}
+								},
+								{
+									"id": 51,
+									"name": "target",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"text": "Optionally a second buffer can be passed that will receive the given values"
+									},
+									"type": {
+										"type": "reference",
+										"name": "AudioBuffer"
+									},
+									"defaultValue": "buffer"
+								},
+								{
+									"id": 52,
+									"name": "value",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"text": "Either a concrete value or a callback that returns a concrete value"
+									},
+									"type": {
+										"type": "reference",
+										"id": 41,
+										"name": "TFillValue"
+									}
+								},
+								{
+									"id": 53,
+									"name": "start",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									},
+									"defaultValue": "0"
+								},
+								{
+									"id": 54,
+									"name": "end",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"text": "\n"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									},
+									"defaultValue": "buffer.length"
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "AudioBuffer"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/functions/fill.ts",
+							"line": 21,
+							"character": 20
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Type aliases",
+					"kind": 4194304,
+					"children": [
+						41
+					]
+				},
+				{
+					"title": "Functions",
+					"kind": 64,
+					"children": [
+						48
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/functions/fill.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 247,
+			"name": "\"src/functions/insert\"",
+			"kind": 1,
+			"kindString": "Module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "C:/projects/ts-audio-buffer-utils/src/functions/insert.ts",
+			"children": [
+				{
+					"id": 248,
+					"name": "insert",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 249,
+							"name": "insert",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Insert the source buffer at the given offset in the target buffer.\nThe optional length parameter determines the range in the target buffer\nthat will be overwritten by the source buffer."
+							},
+							"parameters": [
+								{
+									"id": 250,
+									"name": "sourceBuffer",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {},
+									"type": {
+										"type": "reference",
+										"name": "AudioBuffer"
+									}
+								},
+								{
+									"id": 251,
+									"name": "targetBuffer",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {},
+									"type": {
+										"type": "reference",
+										"name": "AudioBuffer"
+									}
+								},
+								{
+									"id": 252,
+									"name": "offset",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								},
+								{
+									"id": 253,
+									"name": "length",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true,
+										"isOptional": true
+									},
+									"comment": {
+										"text": "\n"
+									},
+									"type": {
+										"type": "union",
+										"types": [
+											{
+												"type": "intrinsic",
+												"name": "undefined"
+											},
+											{
+												"type": "intrinsic",
+												"name": "number"
+											}
+										]
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "AudioBuffer"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/functions/insert.ts",
+							"line": 15,
+							"character": 22
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Functions",
+					"kind": 64,
+					"children": [
+						248
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/functions/insert.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 55,
+			"name": "\"src/functions/invert\"",
+			"kind": 1,
+			"kindString": "Module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "C:/projects/ts-audio-buffer-utils/src/functions/invert.ts",
+			"children": [
+				{
+					"id": 56,
+					"name": "invert",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 57,
+							"name": "invert",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Invert amplitude of samples in each channel"
+							},
+							"parameters": [
+								{
+									"id": 58,
+									"name": "buffer",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {},
+									"type": {
+										"type": "reference",
+										"name": "AudioBuffer"
+									}
+								},
+								{
+									"id": 59,
+									"name": "target",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {},
+									"type": {
+										"type": "reference",
+										"name": "AudioBuffer"
+									},
+									"defaultValue": "buffer"
+								},
+								{
+									"id": 60,
+									"name": "start",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									},
+									"defaultValue": "0"
+								},
+								{
+									"id": 61,
+									"name": "end",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"text": "\n"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									},
+									"defaultValue": "buffer.length"
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "AudioBuffer"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/functions/invert.ts",
+							"line": 10,
+							"character": 22
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Functions",
+					"kind": 64,
+					"children": [
+						56
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/functions/invert.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 123,
+			"name": "\"src/functions/mean\"",
+			"kind": 1,
+			"kindString": "Module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "C:/projects/ts-audio-buffer-utils/src/functions/mean.ts",
+			"children": [
+				{
+					"id": 124,
+					"name": "mean",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 125,
+							"name": "mean",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Get average level per-channel"
+							},
+							"parameters": [
+								{
+									"id": 126,
+									"name": "buffer",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {},
+									"type": {
+										"type": "reference",
+										"name": "AudioBuffer"
+									}
+								},
+								{
+									"id": 127,
+									"name": "start",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									},
+									"defaultValue": "0"
+								},
+								{
+									"id": 128,
+									"name": "end",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"text": "\n"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									},
+									"defaultValue": "buffer.length"
+								}
+							],
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "intrinsic",
+									"name": "number"
+								}
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/functions/mean.ts",
+							"line": 9,
+							"character": 20
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Functions",
+					"kind": 64,
+					"children": [
+						124
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/functions/mean.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 67,
+			"name": "\"src/functions/milliseconds-to-position\"",
+			"kind": 1,
+			"kindString": "Module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "C:/projects/ts-audio-buffer-utils/src/functions/milliseconds-to-position.ts",
+			"children": [
+				{
+					"id": 68,
+					"name": "millisecondsToPosition",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 69,
+							"name": "millisecondsToPosition",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Returns the audiobuffer position based on the given duration in milliseconds"
+							},
+							"parameters": [
+								{
+									"id": 70,
+									"name": "durationInMilliseconds",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								},
+								{
+									"id": 71,
+									"name": "sampleRate",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"text": "\n"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									},
+									"defaultValue": "44100"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/functions/milliseconds-to-position.ts",
+							"line": 9,
+							"character": 38
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Functions",
+					"kind": 64,
+					"children": [
+						68
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/functions/milliseconds-to-position.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 72,
+			"name": "\"src/functions/mix\"",
+			"kind": 1,
+			"kindString": "Module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "C:/projects/ts-audio-buffer-utils/src/functions/mix.ts",
+			"children": [
+				{
+					"id": 73,
+					"name": "TRatioValue",
+					"kind": 4194304,
+					"kindString": "Type alias",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/functions/mix.ts",
+							"line": 1,
+							"character": 23
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "number"
+							},
+							{
+								"type": "reflection",
+								"declaration": {
+									"id": 74,
+									"name": "__type",
+									"kind": 65536,
+									"kindString": "Type literal",
+									"flags": {
+										"isExported": true
+									},
+									"signatures": [
+										{
+											"id": 75,
+											"name": "__call",
+											"kind": 4096,
+											"kindString": "Call signature",
+											"flags": {
+												"isExported": true
+											},
+											"parameters": [
+												{
+													"id": 76,
+													"name": "dataA",
+													"kind": 32768,
+													"kindString": "Parameter",
+													"flags": {
+														"isExported": true
+													},
+													"type": {
+														"type": "intrinsic",
+														"name": "number"
+													}
+												},
+												{
+													"id": 77,
+													"name": "dataB",
+													"kind": 32768,
+													"kindString": "Parameter",
+													"flags": {
+														"isExported": true
+													},
+													"type": {
+														"type": "intrinsic",
+														"name": "number"
+													}
+												},
+												{
+													"id": 78,
+													"name": "index",
+													"kind": 32768,
+													"kindString": "Parameter",
+													"flags": {
+														"isExported": true,
+														"isOptional": true
+													},
+													"type": {
+														"type": "union",
+														"types": [
+															{
+																"type": "intrinsic",
+																"name": "undefined"
+															},
+															{
+																"type": "intrinsic",
+																"name": "number"
+															}
+														]
+													}
+												},
+												{
+													"id": 79,
+													"name": "channel",
+													"kind": 32768,
+													"kindString": "Parameter",
+													"flags": {
+														"isExported": true,
+														"isOptional": true
+													},
+													"type": {
+														"type": "union",
+														"types": [
+															{
+																"type": "intrinsic",
+																"name": "undefined"
+															},
+															{
+																"type": "intrinsic",
+																"name": "number"
+															}
+														]
+													}
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"sources": [
+										{
+											"fileName": "src/functions/mix.ts",
+											"line": 3,
+											"character": 5
+										}
+									]
+								}
+							}
+						]
+					}
+				},
+				{
+					"id": 80,
+					"name": "mix",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 81,
+							"name": "mix",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Mix current bufferA with bufferB.\nThe reason to modify bufferA instead of returning the new buffer\nis reduced amount of calculations and flexibility.\nIf required, the cloning can be done before mixing."
+							},
+							"parameters": [
+								{
+									"id": 82,
+									"name": "bufferA",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {},
+									"type": {
+										"type": "reference",
+										"name": "AudioBuffer"
+									}
+								},
+								{
+									"id": 83,
+									"name": "bufferB",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {},
+									"type": {
+										"type": "reference",
+										"name": "AudioBuffer"
+									}
+								},
+								{
+									"id": 84,
+									"name": "ratio",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {},
+									"type": {
+										"type": "reference",
+										"id": 73,
+										"name": "TRatioValue"
+									},
+									"defaultValue": "0.5"
+								},
+								{
+									"id": 85,
+									"name": "offset",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"text": "\n"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									},
+									"defaultValue": "0"
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "AudioBuffer"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/functions/mix.ts",
+							"line": 21,
+							"character": 19
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Type aliases",
+					"kind": 4194304,
+					"children": [
+						73
+					]
+				},
+				{
+					"title": "Functions",
+					"kind": 64,
+					"children": [
+						80
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/functions/mix.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 86,
+			"name": "\"src/functions/noise\"",
+			"kind": 1,
+			"kindString": "Module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "C:/projects/ts-audio-buffer-utils/src/functions/noise.ts",
+			"children": [
+				{
+					"id": 87,
+					"name": "noise",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 88,
+							"name": "noise",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Fill the given buffer with white noise"
+							},
+							"parameters": [
+								{
+									"id": 89,
+									"name": "buffer",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {},
+									"type": {
+										"type": "reference",
+										"name": "AudioBuffer"
+									}
+								},
+								{
+									"id": 90,
+									"name": "target",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {},
+									"type": {
+										"type": "reference",
+										"name": "AudioBuffer"
+									},
+									"defaultValue": "buffer"
+								},
+								{
+									"id": 91,
+									"name": "start",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									},
+									"defaultValue": "0"
+								},
+								{
+									"id": 92,
+									"name": "end",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"text": "\n"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									},
+									"defaultValue": "buffer.length"
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "AudioBuffer"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/functions/noise.ts",
+							"line": 11,
+							"character": 21
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Functions",
+					"kind": 64,
+					"children": [
+						87
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/functions/noise.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 93,
+			"name": "\"src/functions/normalize\"",
+			"kind": 1,
+			"kindString": "Module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "C:/projects/ts-audio-buffer-utils/src/functions/normalize.ts",
+			"children": [
+				{
+					"id": 100,
+					"name": "clamp",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {},
+					"signatures": [
+						{
+							"id": 101,
+							"name": "clamp",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 102,
+									"name": "value",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								},
+								{
+									"id": 103,
+									"name": "min",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								},
+								{
+									"id": 104,
+									"name": "max",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/functions/normalize.ts",
+							"line": 45,
+							"character": 14
+						}
+					]
+				},
+				{
+					"id": 94,
+					"name": "normalize",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 95,
+							"name": "normalize",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Normalize the given buffer by the maximum value,\nlimit values by the -1..1 range"
+							},
+							"parameters": [
+								{
+									"id": 96,
+									"name": "buffer",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {},
+									"type": {
+										"type": "reference",
+										"name": "AudioBuffer"
+									}
+								},
+								{
+									"id": 97,
+									"name": "target",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {},
+									"type": {
+										"type": "reference",
+										"name": "AudioBuffer"
+									},
+									"defaultValue": "buffer"
+								},
+								{
+									"id": 98,
+									"name": "start",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									},
+									"defaultValue": "0"
+								},
+								{
+									"id": 99,
+									"name": "end",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"text": "\n"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									},
+									"defaultValue": "buffer.length"
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "AudioBuffer"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/functions/normalize.ts",
+							"line": 13,
+							"character": 25
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Functions",
+					"kind": 64,
+					"children": [
+						100,
+						94
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/functions/normalize.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 105,
+			"name": "\"src/functions/pad\"",
+			"kind": 1,
+			"kindString": "Module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "C:/projects/ts-audio-buffer-utils/src/functions/pad.ts",
+			"children": [
+				{
+					"id": 106,
+					"name": "TPaddingSide",
+					"kind": 4194304,
+					"kindString": "Type alias",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/functions/pad.ts",
+							"line": 5,
+							"character": 24
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "stringLiteral",
+								"value": "left"
+							},
+							{
+								"type": "stringLiteral",
+								"value": "right"
+							}
+						]
+					}
+				},
+				{
+					"id": 107,
+					"name": "pad",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 108,
+							"name": "pad",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Pad the given buffer to the required size"
+							},
+							"parameters": [
+								{
+									"id": 109,
+									"name": "buffer",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {},
+									"type": {
+										"type": "reference",
+										"name": "AudioBuffer"
+									}
+								},
+								{
+									"id": 110,
+									"name": "newLength",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								},
+								{
+									"id": 111,
+									"name": "side",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {},
+									"type": {
+										"type": "reference",
+										"id": 106,
+										"name": "TPaddingSide"
+									}
+								},
+								{
+									"id": 112,
+									"name": "value",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"text": "\n"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									},
+									"defaultValue": "0"
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "AudioBuffer"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/functions/pad.ts",
+							"line": 15,
+							"character": 19
+						}
+					]
+				},
+				{
+					"id": 113,
+					"name": "padLeft",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 114,
+							"name": "padLeft",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Pad the given buffer to the required size from the left."
+							},
+							"parameters": [
+								{
+									"id": 115,
+									"name": "buffer",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {},
+									"type": {
+										"type": "reference",
+										"name": "AudioBuffer"
+									}
+								},
+								{
+									"id": 116,
+									"name": "newLength",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								},
+								{
+									"id": 117,
+									"name": "value",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"text": "\n"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									},
+									"defaultValue": "0"
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "AudioBuffer"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/functions/pad.ts",
+							"line": 60,
+							"character": 23
+						}
+					]
+				},
+				{
+					"id": 118,
+					"name": "padRight",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 119,
+							"name": "padRight",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Pad the given buffer to the required size from the right."
+							},
+							"parameters": [
+								{
+									"id": 120,
+									"name": "buffer",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {},
+									"type": {
+										"type": "reference",
+										"name": "AudioBuffer"
+									}
+								},
+								{
+									"id": 121,
+									"name": "newLength",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								},
+								{
+									"id": 122,
+									"name": "value",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"text": "\n"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									},
+									"defaultValue": "0"
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "AudioBuffer"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/functions/pad.ts",
+							"line": 75,
+							"character": 24
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Type aliases",
+					"kind": 4194304,
+					"children": [
+						106
+					]
+				},
+				{
+					"title": "Functions",
+					"kind": 64,
+					"children": [
+						107,
+						113,
+						118
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/functions/pad.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 129,
+			"name": "\"src/functions/remove-static\"",
+			"kind": 1,
+			"kindString": "Module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "C:/projects/ts-audio-buffer-utils/src/functions/remove-static.ts",
+			"children": [
+				{
+					"id": 130,
+					"name": "removeStatic",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 131,
+							"name": "removeStatic",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "remove DC offset"
+							},
+							"parameters": [
+								{
+									"id": 132,
+									"name": "buffer",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {},
+									"type": {
+										"type": "reference",
+										"name": "AudioBuffer"
+									}
+								},
+								{
+									"id": 133,
+									"name": "target",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {},
+									"type": {
+										"type": "reference",
+										"name": "AudioBuffer"
+									},
+									"defaultValue": "buffer"
+								},
+								{
+									"id": 134,
+									"name": "start",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									},
+									"defaultValue": "0"
+								},
+								{
+									"id": 135,
+									"name": "end",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"text": "\n"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									},
+									"defaultValue": "buffer.length"
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "AudioBuffer"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/functions/remove-static.ts",
+							"line": 12,
+							"character": 28
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Functions",
+					"kind": 64,
+					"children": [
+						130
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/functions/remove-static.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 136,
+			"name": "\"src/functions/repeat\"",
+			"kind": 1,
+			"kindString": "Module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "C:/projects/ts-audio-buffer-utils/src/functions/repeat.ts",
+			"children": [
+				{
+					"id": 137,
+					"name": "repeat",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 138,
+							"name": "repeat",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Repeat the given buffer the given amount of times"
+							},
+							"parameters": [
+								{
+									"id": 139,
+									"name": "buffer",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {},
+									"type": {
+										"type": "reference",
+										"name": "AudioBuffer"
+									}
+								},
+								{
+									"id": 140,
+									"name": "times",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"text": "\n"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "AudioBuffer"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/functions/repeat.ts",
+							"line": 9,
+							"character": 22
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Functions",
+					"kind": 64,
+					"children": [
+						137
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/functions/repeat.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 147,
+			"name": "\"src/functions/resize\"",
+			"kind": 1,
+			"kindString": "Module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "C:/projects/ts-audio-buffer-utils/src/functions/resize.ts",
+			"children": [
+				{
+					"id": 148,
+					"name": "resize",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 149,
+							"name": "resize",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Change the length of the given buffer, by trimming or filling with zeros."
+							},
+							"parameters": [
+								{
+									"id": 150,
+									"name": "buffer",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {},
+									"type": {
+										"type": "reference",
+										"name": "AudioBuffer"
+									}
+								},
+								{
+									"id": 151,
+									"name": "length",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"text": "\n"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "AudioBuffer"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/functions/resize.ts",
+							"line": 11,
+							"character": 22
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Functions",
+					"kind": 64,
+					"children": [
+						148
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/functions/resize.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 152,
+			"name": "\"src/functions/reverse\"",
+			"kind": 1,
+			"kindString": "Module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "C:/projects/ts-audio-buffer-utils/src/functions/reverse.ts",
+			"children": [
+				{
+					"id": 153,
+					"name": "reverse",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 154,
+							"name": "reverse",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Reverse samples in each channel"
+							},
+							"parameters": [
+								{
+									"id": 155,
+									"name": "buffer",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {},
+									"type": {
+										"type": "reference",
+										"name": "AudioBuffer"
+									}
+								},
+								{
+									"id": 156,
+									"name": "target",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {},
+									"type": {
+										"type": "reference",
+										"name": "AudioBuffer"
+									},
+									"defaultValue": "buffer"
+								},
+								{
+									"id": 157,
+									"name": "start",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									},
+									"defaultValue": "0"
+								},
+								{
+									"id": 158,
+									"name": "end",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"text": "\n"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									},
+									"defaultValue": "buffer.length"
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "AudioBuffer"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/functions/reverse.ts",
+							"line": 12,
+							"character": 23
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Functions",
+					"kind": 64,
+					"children": [
+						153
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/functions/reverse.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 159,
+			"name": "\"src/functions/rotate\"",
+			"kind": 1,
+			"kindString": "Module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "C:/projects/ts-audio-buffer-utils/src/functions/rotate.ts",
+			"children": [
+				{
+					"id": 160,
+					"name": "rotate",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 161,
+							"name": "rotate",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Shift content of the given buffer in circular fashion"
+							},
+							"parameters": [
+								{
+									"id": 162,
+									"name": "buffer",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {},
+									"type": {
+										"type": "reference",
+										"name": "AudioBuffer"
+									}
+								},
+								{
+									"id": 163,
+									"name": "offset",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"text": "\n"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "AudioBuffer"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/functions/rotate.ts",
+							"line": 7,
+							"character": 22
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Functions",
+					"kind": 64,
+					"children": [
+						160
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/functions/rotate.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 62,
+			"name": "\"src/functions/seconds-to-position\"",
+			"kind": 1,
+			"kindString": "Module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "C:/projects/ts-audio-buffer-utils/src/functions/seconds-to-position.ts",
+			"children": [
+				{
+					"id": 63,
+					"name": "secondsToPosition",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 64,
+							"name": "secondsToPosition",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Returns the audiobuffer position based on the given duration in seconds"
+							},
+							"parameters": [
+								{
+									"id": 65,
+									"name": "durationInSeconds",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								},
+								{
+									"id": 66,
+									"name": "sampleRate",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"text": "\n"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									},
+									"defaultValue": "44100"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/functions/seconds-to-position.ts",
+							"line": 7,
+							"character": 33
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Functions",
+					"kind": 64,
+					"children": [
+						63
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/functions/seconds-to-position.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 7,
+			"name": "\"src/functions/shallow\"",
+			"kind": 1,
+			"kindString": "Module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "C:/projects/ts-audio-buffer-utils/src/functions/shallow.ts",
+			"children": [
+				{
+					"id": 8,
+					"name": "shallow",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 9,
+							"name": "shallow",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Create a buffer with the same characteristics as the given buffer, without copying\nthe data. Contents of resulting buffer are undefined."
+							},
+							"parameters": [
+								{
+									"id": 10,
+									"name": "buffer",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"text": "\n"
+									},
+									"type": {
+										"type": "reference",
+										"name": "AudioBuffer"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "AudioBuffer"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/functions/shallow.ts",
+							"line": 9,
+							"character": 23
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Functions",
+					"kind": 64,
+					"children": [
+						8
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/functions/shallow.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 164,
+			"name": "\"src/functions/shift\"",
+			"kind": 1,
+			"kindString": "Module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "C:/projects/ts-audio-buffer-utils/src/functions/shift.ts",
+			"children": [
+				{
+					"id": 165,
+					"name": "shift",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 166,
+							"name": "shift",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Shift content of the buffer"
+							},
+							"parameters": [
+								{
+									"id": 167,
+									"name": "buffer",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {},
+									"type": {
+										"type": "reference",
+										"name": "AudioBuffer"
+									}
+								},
+								{
+									"id": 168,
+									"name": "offset",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"text": "\n"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "AudioBuffer"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/functions/shift.ts",
+							"line": 7,
+							"character": 21
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Functions",
+					"kind": 64,
+					"children": [
+						165
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/functions/shift.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 169,
+			"name": "\"src/functions/silence\"",
+			"kind": 1,
+			"kindString": "Module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "C:/projects/ts-audio-buffer-utils/src/functions/silence.ts",
+			"children": [
+				{
+					"id": 170,
+					"name": "silence",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 171,
+							"name": "silence",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Fill the given buffer with zeros"
+							},
+							"parameters": [
+								{
+									"id": 172,
+									"name": "buffer",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {},
+									"type": {
+										"type": "reference",
+										"name": "AudioBuffer"
+									}
+								},
+								{
+									"id": 173,
+									"name": "target",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {},
+									"type": {
+										"type": "reference",
+										"name": "AudioBuffer"
+									},
+									"defaultValue": "buffer"
+								},
+								{
+									"id": 174,
+									"name": "start",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									},
+									"defaultValue": "0"
+								},
+								{
+									"id": 175,
+									"name": "end",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"text": "\n"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									},
+									"defaultValue": "buffer.length"
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "AudioBuffer"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/functions/silence.ts",
+							"line": 11,
+							"character": 23
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Functions",
+					"kind": 64,
+					"children": [
+						170
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/functions/silence.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 176,
+			"name": "\"src/functions/size\"",
+			"kind": 1,
+			"kindString": "Module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "C:/projects/ts-audio-buffer-utils/src/functions/size.ts",
+			"children": [
+				{
+					"id": 177,
+					"name": "size",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 178,
+							"name": "size",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Size of the given buffer in bytes"
+							},
+							"parameters": [
+								{
+									"id": 179,
+									"name": "buffer",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"text": "\n"
+									},
+									"type": {
+										"type": "reference",
+										"name": "AudioBuffer"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/functions/size.ts",
+							"line": 6,
+							"character": 20
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Functions",
+					"kind": 64,
+					"children": [
+						177
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/functions/size.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 141,
+			"name": "\"src/functions/slice\"",
+			"kind": 1,
+			"kindString": "Module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "C:/projects/ts-audio-buffer-utils/src/functions/slice.ts",
+			"children": [
+				{
+					"id": 142,
+					"name": "slice",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 143,
+							"name": "slice",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Return a section of the given buffer"
+							},
+							"parameters": [
+								{
+									"id": 144,
+									"name": "buffer",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {},
+									"type": {
+										"type": "reference",
+										"name": "AudioBuffer"
+									}
+								},
+								{
+									"id": 145,
+									"name": "start",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									},
+									"defaultValue": "0"
+								},
+								{
+									"id": 146,
+									"name": "end",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"text": "\n"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									},
+									"defaultValue": "buffer.length"
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "AudioBuffer"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/functions/slice.ts",
+							"line": 10,
+							"character": 21
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Functions",
+					"kind": 64,
+					"children": [
+						142
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/functions/slice.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 242,
+			"name": "\"src/functions/split\"",
+			"kind": 1,
+			"kindString": "Module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "C:/projects/ts-audio-buffer-utils/src/functions/split.ts",
+			"children": [
+				{
+					"id": 243,
+					"name": "split",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 244,
+							"name": "split",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Split the given buffer into two separate buffers, cutting it in two at the given offset."
+							},
+							"parameters": [
+								{
+									"id": 245,
+									"name": "buffer",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {},
+									"type": {
+										"type": "reference",
+										"name": "AudioBuffer"
+									}
+								},
+								{
+									"id": 246,
+									"name": "offset",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"text": "\n"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							],
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"name": "AudioBuffer"
+								}
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/functions/split.ts",
+							"line": 9,
+							"character": 21
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Functions",
+					"kind": 64,
+					"children": [
+						243
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/functions/split.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 180,
+			"name": "\"src/functions/trim\"",
+			"kind": 1,
+			"kindString": "Module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "C:/projects/ts-audio-buffer-utils/src/functions/trim.ts",
+			"children": [
+				{
+					"id": 181,
+					"name": "trim",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 182,
+							"name": "trim",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Trim buffer by removing zeros from the beginning and the end"
+							},
+							"parameters": [
+								{
+									"id": 183,
+									"name": "buffer",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {},
+									"type": {
+										"type": "reference",
+										"name": "AudioBuffer"
+									}
+								},
+								{
+									"id": 184,
+									"name": "level",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"text": "\n"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									},
+									"defaultValue": "0"
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "AudioBuffer"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/functions/trim.ts",
+							"line": 9,
+							"character": 20
+						}
+					]
+				},
+				{
+					"id": 193,
+					"name": "trimInternal",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {},
+					"signatures": [
+						{
+							"id": 194,
+							"name": "trimInternal",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 195,
+									"name": "buffer",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"name": "AudioBuffer"
+									}
+								},
+								{
+									"id": 196,
+									"name": "level",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									},
+									"defaultValue": "0"
+								},
+								{
+									"id": 197,
+									"name": "trimLeft",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "boolean"
+									}
+								},
+								{
+									"id": 198,
+									"name": "trimRight",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "boolean"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "AudioBuffer"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/functions/trim.ts",
+							"line": 33,
+							"character": 21
+						}
+					]
+				},
+				{
+					"id": 185,
+					"name": "trimLeft",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 186,
+							"name": "trimLeft",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Trim buffer by removing zeros from the beginning"
+							},
+							"parameters": [
+								{
+									"id": 187,
+									"name": "buffer",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {},
+									"type": {
+										"type": "reference",
+										"name": "AudioBuffer"
+									}
+								},
+								{
+									"id": 188,
+									"name": "level",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"text": "\n"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									},
+									"defaultValue": "0"
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "AudioBuffer"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/functions/trim.ts",
+							"line": 19,
+							"character": 24
+						}
+					]
+				},
+				{
+					"id": 189,
+					"name": "trimRight",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 190,
+							"name": "trimRight",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Trim buffer by removing zeros from the end"
+							},
+							"parameters": [
+								{
+									"id": 191,
+									"name": "buffer",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {},
+									"type": {
+										"type": "reference",
+										"name": "AudioBuffer"
+									}
+								},
+								{
+									"id": 192,
+									"name": "level",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"text": "\n"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									},
+									"defaultValue": "0"
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "AudioBuffer"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/functions/trim.ts",
+							"line": 29,
+							"character": 25
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Functions",
+					"kind": 64,
+					"children": [
+						181,
+						193,
+						185,
+						189
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/functions/trim.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 199,
+			"name": "\"src/index\"",
+			"kind": 1,
+			"kindString": "Module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "C:/projects/ts-audio-buffer-utils/src/index.ts",
+			"children": [
+				{
+					"id": 200,
+					"name": "clone",
+					"kind": 16777216,
+					"kindString": "Reference",
+					"flags": {
+						"isExported": true
+					},
+					"target": 12
+				},
+				{
+					"id": 201,
+					"name": "concat",
+					"kind": 16777216,
+					"kindString": "Reference",
+					"flags": {
+						"isExported": true
+					},
+					"target": 16
+				},
+				{
+					"id": 202,
+					"name": "copy",
+					"kind": 16777216,
+					"kindString": "Reference",
+					"flags": {
+						"isExported": true
+					},
+					"target": 2
+				},
+				{
+					"id": 203,
+					"name": "create",
+					"kind": 16777216,
+					"kindString": "Reference",
+					"flags": {
+						"isExported": true
+					},
+					"target": 25
+				},
+				{
+					"id": 204,
+					"name": "createBuffer",
+					"kind": 16777216,
+					"kindString": "Reference",
+					"flags": {
+						"isExported": true
+					},
+					"target": 20
+				},
+				{
+					"id": 205,
+					"name": "data",
+					"kind": 16777216,
+					"kindString": "Reference",
+					"flags": {
+						"isExported": true
+					},
+					"target": 31
+				},
+				{
+					"id": 206,
+					"name": "equal",
+					"kind": 16777216,
+					"kindString": "Reference",
+					"flags": {
+						"isExported": true
+					},
+					"target": 36
+				},
+				{
+					"id": 207,
+					"name": "fill",
+					"kind": 16777216,
+					"kindString": "Reference",
+					"flags": {
+						"isExported": true
+					},
+					"target": 48
+				},
+				{
+					"id": 208,
+					"name": "invert",
+					"kind": 16777216,
+					"kindString": "Reference",
+					"flags": {
+						"isExported": true
+					},
+					"target": 56
+				},
+				{
+					"id": 209,
+					"name": "millisecondsToPosition",
+					"kind": 16777216,
+					"kindString": "Reference",
+					"flags": {
+						"isExported": true
+					},
+					"target": 68
+				},
+				{
+					"id": 210,
+					"name": "mix",
+					"kind": 16777216,
+					"kindString": "Reference",
+					"flags": {
+						"isExported": true
+					},
+					"target": 80
+				},
+				{
+					"id": 211,
+					"name": "noise",
+					"kind": 16777216,
+					"kindString": "Reference",
+					"flags": {
+						"isExported": true
+					},
+					"target": 87
+				},
+				{
+					"id": 212,
+					"name": "normalize",
+					"kind": 16777216,
+					"kindString": "Reference",
+					"flags": {
+						"isExported": true
+					},
+					"target": 94
+				},
+				{
+					"id": 213,
+					"name": "pad",
+					"kind": 16777216,
+					"kindString": "Reference",
+					"flags": {
+						"isExported": true
+					},
+					"target": 107
+				},
+				{
+					"id": 214,
+					"name": "padLeft",
+					"kind": 16777216,
+					"kindString": "Reference",
+					"flags": {
+						"isExported": true
+					},
+					"target": 113
+				},
+				{
+					"id": 215,
+					"name": "padRight",
+					"kind": 16777216,
+					"kindString": "Reference",
+					"flags": {
+						"isExported": true
+					},
+					"target": 118
+				},
+				{
+					"id": 216,
+					"name": "removeStatic",
+					"kind": 16777216,
+					"kindString": "Reference",
+					"flags": {
+						"isExported": true
+					},
+					"target": 130
+				},
+				{
+					"id": 217,
+					"name": "repeat",
+					"kind": 16777216,
+					"kindString": "Reference",
+					"flags": {
+						"isExported": true
+					},
+					"target": 137
+				},
+				{
+					"id": 218,
+					"name": "resize",
+					"kind": 16777216,
+					"kindString": "Reference",
+					"flags": {
+						"isExported": true
+					},
+					"target": 148
+				},
+				{
+					"id": 219,
+					"name": "reverse",
+					"kind": 16777216,
+					"kindString": "Reference",
+					"flags": {
+						"isExported": true
+					},
+					"target": 153
+				},
+				{
+					"id": 220,
+					"name": "rotate",
+					"kind": 16777216,
+					"kindString": "Reference",
+					"flags": {
+						"isExported": true
+					},
+					"target": 160
+				},
+				{
+					"id": 221,
+					"name": "secondsToPosition",
+					"kind": 16777216,
+					"kindString": "Reference",
+					"flags": {
+						"isExported": true
+					},
+					"target": 63
+				},
+				{
+					"id": 222,
+					"name": "shallow",
+					"kind": 16777216,
+					"kindString": "Reference",
+					"flags": {
+						"isExported": true
+					},
+					"target": 8
+				},
+				{
+					"id": 223,
+					"name": "shift",
+					"kind": 16777216,
+					"kindString": "Reference",
+					"flags": {
+						"isExported": true
+					},
+					"target": 165
+				},
+				{
+					"id": 224,
+					"name": "silence",
+					"kind": 16777216,
+					"kindString": "Reference",
+					"flags": {
+						"isExported": true
+					},
+					"target": 170
+				},
+				{
+					"id": 225,
+					"name": "size",
+					"kind": 16777216,
+					"kindString": "Reference",
+					"flags": {
+						"isExported": true
+					},
+					"target": 177
+				},
+				{
+					"id": 226,
+					"name": "slice",
+					"kind": 16777216,
+					"kindString": "Reference",
+					"flags": {
+						"isExported": true
+					},
+					"target": 142
+				},
+				{
+					"id": 227,
+					"name": "trim",
+					"kind": 16777216,
+					"kindString": "Reference",
+					"flags": {
+						"isExported": true
+					},
+					"target": 181
+				},
+				{
+					"id": 228,
+					"name": "trimLeft",
+					"kind": 16777216,
+					"kindString": "Reference",
+					"flags": {
+						"isExported": true
+					},
+					"target": 185
+				},
+				{
+					"id": 229,
+					"name": "trimRight",
+					"kind": 16777216,
+					"kindString": "Reference",
+					"flags": {
+						"isExported": true
+					},
+					"target": 189
+				},
+				{
+					"id": 230,
+					"name": "TAudioCreateArgs",
+					"kind": 4194304,
+					"kindString": "Type alias",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 28,
+							"character": 28
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "reference",
+								"id": 231,
+								"name": "TAudioCreateOptions"
+							},
+							{
+								"type": "intrinsic",
+								"name": "number"
+							}
+						]
+					}
+				},
+				{
+					"id": 231,
+					"name": "TAudioCreateOptions",
+					"kind": 4194304,
+					"kindString": "Type alias",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 30,
+							"character": 31
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 232,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {
+								"isExported": true
+							},
+							"children": [
+								{
+									"id": 233,
+									"name": "channels",
+									"kind": 32,
+									"kindString": "Variable",
+									"flags": {
+										"isExported": true,
+										"isOptional": true
+									},
+									"sources": [
+										{
+											"fileName": "src/index.ts",
+											"line": 31,
+											"character": 10
+										}
+									],
+									"type": {
+										"type": "union",
+										"types": [
+											{
+												"type": "intrinsic",
+												"name": "undefined"
+											},
+											{
+												"type": "intrinsic",
+												"name": "number"
+											}
+										]
+									}
+								},
+								{
+									"id": 237,
+									"name": "duration",
+									"kind": 32,
+									"kindString": "Variable",
+									"flags": {
+										"isExported": true,
+										"isOptional": true
+									},
+									"sources": [
+										{
+											"fileName": "src/index.ts",
+											"line": 35,
+											"character": 10
+										}
+									],
+									"type": {
+										"type": "union",
+										"types": [
+											{
+												"type": "intrinsic",
+												"name": "undefined"
+											},
+											{
+												"type": "intrinsic",
+												"name": "number"
+											}
+										]
+									}
+								},
+								{
+									"id": 234,
+									"name": "format",
+									"kind": 32,
+									"kindString": "Variable",
+									"flags": {
+										"isExported": true,
+										"isOptional": true
+									},
+									"sources": [
+										{
+											"fileName": "src/index.ts",
+											"line": 32,
+											"character": 8
+										}
+									],
+									"type": {
+										"type": "union",
+										"types": [
+											{
+												"type": "intrinsic",
+												"name": "undefined"
+											},
+											{
+												"type": "intrinsic",
+												"name": "string"
+											}
+										]
+									}
+								},
+								{
+									"id": 236,
+									"name": "length",
+									"kind": 32,
+									"kindString": "Variable",
+									"flags": {
+										"isExported": true,
+										"isOptional": true
+									},
+									"sources": [
+										{
+											"fileName": "src/index.ts",
+											"line": 34,
+											"character": 8
+										}
+									],
+									"type": {
+										"type": "union",
+										"types": [
+											{
+												"type": "intrinsic",
+												"name": "undefined"
+											},
+											{
+												"type": "intrinsic",
+												"name": "number"
+											}
+										]
+									}
+								},
+								{
+									"id": 235,
+									"name": "sampleRate",
+									"kind": 32,
+									"kindString": "Variable",
+									"flags": {
+										"isExported": true,
+										"isOptional": true
+									},
+									"sources": [
+										{
+											"fileName": "src/index.ts",
+											"line": 33,
+											"character": 12
+										}
+									],
+									"type": {
+										"type": "union",
+										"types": [
+											{
+												"type": "intrinsic",
+												"name": "undefined"
+											},
+											{
+												"type": "intrinsic",
+												"name": "number"
+											}
+										]
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Variables",
+									"kind": 32,
+									"children": [
+										233,
+										237,
+										234,
+										236,
+										235
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 30,
+									"character": 33
+								}
+							]
+						}
+					}
+				},
+				{
+					"id": 238,
+					"name": "TFullAudioCreateOptions",
+					"kind": 4194304,
+					"kindString": "Type alias",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 38,
+							"character": 35
+						}
+					],
+					"type": {
+						"type": "intersection",
+						"types": [
+							{
+								"type": "reflection",
+								"declaration": {
+									"id": 239,
+									"name": "__type",
+									"kind": 65536,
+									"kindString": "Type literal",
+									"flags": {
+										"isExported": true
+									},
+									"children": [
+										{
+											"id": 240,
+											"name": "context",
+											"kind": 32,
+											"kindString": "Variable",
+											"flags": {
+												"isExported": true
+											},
+											"sources": [
+												{
+													"fileName": "src/index.ts",
+													"line": 39,
+													"character": 9
+												}
+											],
+											"type": {
+												"type": "reference",
+												"name": "AudioContext"
+											}
+										}
+									],
+									"groups": [
+										{
+											"title": "Variables",
+											"kind": 32,
+											"children": [
+												240
+											]
+										}
+									],
+									"sources": [
+										{
+											"fileName": "src/index.ts",
+											"line": 38,
+											"character": 37
+										}
+									]
+								}
+							},
+							{
+								"type": "reference",
+								"id": 231,
+								"name": "TAudioCreateOptions"
+							}
+						]
+					}
+				},
+				{
+					"id": 241,
+					"name": "audioContext",
+					"kind": 32,
+					"kindString": "Variable",
+					"flags": {
+						"isExported": true,
+						"isConst": true
+					},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 42,
+							"character": 25
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "AudioContext"
+					},
+					"defaultValue": "new AudioContext()"
+				}
+			],
+			"groups": [
+				{
+					"title": "References",
+					"kind": 16777216,
+					"children": [
+						200,
+						201,
+						202,
+						203,
+						204,
+						205,
+						206,
+						207,
+						208,
+						209,
+						210,
+						211,
+						212,
+						213,
+						214,
+						215,
+						216,
+						217,
+						218,
+						219,
+						220,
+						221,
+						222,
+						223,
+						224,
+						225,
+						226,
+						227,
+						228,
+						229
+					]
+				},
+				{
+					"title": "Type aliases",
+					"kind": 4194304,
+					"children": [
+						230,
+						231,
+						238
+					]
+				},
+				{
+					"title": "Variables",
+					"kind": 32,
+					"children": [
+						241
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/index.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		}
+	],
+	"groups": [
+		{
+			"title": "Modules",
+			"kind": 1,
+			"children": [
+				11,
+				15,
+				1,
+				24,
+				19,
+				30,
+				35,
+				40,
+				247,
+				55,
+				123,
+				67,
+				72,
+				86,
+				93,
+				105,
+				129,
+				136,
+				147,
+				152,
+				159,
+				62,
+				7,
+				164,
+				169,
+				176,
+				141,
+				242,
+				180,
+				199
+			]
+		}
+	]
+}

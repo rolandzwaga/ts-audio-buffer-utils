@@ -1,4 +1,4 @@
-import { nidx } from "./nidx";
+import { nidx } from "../helper/nidx";
 
 export type TFillValue =
   | number
